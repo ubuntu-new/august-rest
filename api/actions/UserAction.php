@@ -302,29 +302,12 @@ class UserAction {
 
     public static function tryToFetchAccessToken($username, $password, $pin = false, $poses = null) {
 
-        if ($pin) {
-            $user = \common\models\User::findByPin($pin);
-            if ($user) {
-                $user->branch = $poses->branch_name;
-                if ($user->save()) {
-                    $postocashier = new PosesToCashier();
-                    $postocashier->user_id = $user->id;
-                    $postocashier->pos_id = $poses->id;
-                    if($postocashier->save())
-                        return $user;
-                    else   return null;
 
-                }
-                return null;
-            }
-        }
-        else
-        {
             $user = \common\models\User::findByUsername($username);
 
             if ($user && $user->validatePassword($password))
                 return $user;//->access_token;
-        }
+
         return null;
     }
 

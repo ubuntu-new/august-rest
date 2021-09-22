@@ -3,7 +3,6 @@ namespace api\actions;
 
 
 use api\models\response\AboutResponse;
-
 use backend\models\About;
 use yii\base\Exception;
 use yii\helpers\Json;

@@ -9,7 +9,7 @@
 namespace api\actions;
 
 
-use api\models\database\User;
+use mdm\admin\models\User;
 
 class userActions
 {

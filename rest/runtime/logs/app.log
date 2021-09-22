@@ -6328,3 +6328,484 @@ Stack trace:
 ]
 
 $_POST = []
+2021-04-22 21:16:42 [::1][1][-][error][yii\base\InvalidConfigException] yii\base\InvalidConfigException: The table does not exist: orders in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\ActiveRecord.php:438
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\ActiveRecord.php(469): yii\db\ActiveRecord::getTableSchema()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\BaseActiveRecord.php(500): yii\db\ActiveRecord->attributes()
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\BaseActiveRecord.php(315): yii\db\BaseActiveRecord->hasAttribute('customer_id')
+#3 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(14): yii\db\BaseActiveRecord->__set('customer_id', '2')
+#4 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(26): api\actions\OrdersAction::create('2', '{name: 'iko'}')
+#5 [internal function]: rest\modules\v1\controllers\OrdersController->actionCreate()
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('create', Array)
+#9 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/creat...', Array)
+#10 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#12 {main}
+2021-04-22 21:16:42 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/create'
+]
+
+$_POST = [
+    'customer_id' => '2'
+    'orderData' => '{name: \'iko\'}'
+]
+2021-04-22 21:22:04 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/featured/list". in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/featured/lis...', Array)
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-04-22 21:22:04 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/featured/list'
+]
+
+$_POST = []
+2021-04-22 21:22:37 [::1][-][-][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "v1/featured/list". in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php:543
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/featured/lis...', Array)
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php:116
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2021-04-22 21:22:37 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/featured/list'
+]
+
+$_POST = []
+2021-08-22 18:29:46 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:29:46 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:30:10 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:30:09 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:30:28 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:30:28 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:30:53 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:30:53 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:38:22 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:38:22 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:40:41 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:40:41 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:41:40 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:41:40 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:42:00 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:42:00 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:42:38 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:42:38 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:45:02 [::1][2][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:45:01 [::1][2][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:47:05 [::1][1][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:47:05 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:47:10 [::1][2][-][error][Error] Error: Class 'api\actions\SliderAction' not found in C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php:17
+Stack trace:
+#0 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#7 {main}
+2021-08-22 18:47:10 [::1][2][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-22 18:48:37 [::1][2][-][error][yii\db\Exception] PDOException: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'august.slider' doesn't exist in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php:1299
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(1299): PDOStatement->execute()
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(1165): yii\db\Command->internalExecute('SELECT `i`.*,`m...')
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', 2)
+#3 C:\xampp\htdocs\webertela-new\api\actions\SliderAction.php(25): yii\db\Command->queryAll(2)
+#4 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php(17): api\actions\SliderAction::getList()
+#5 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#9 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#10 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#12 {main}
+
+Next yii\db\Exception: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'august.slider' doesn't exist
+The SQL being executed was: SELECT `i`.*,`m`.`filePath`, `cat`.`name` AS `categoryName`,`cat`.`name_ge` AS `categoryName_ge`
+                    FROM `slider` `i` 
+                    LEFT JOIN `categories` `cat`
+                    ON `i`.`catId` = `cat`.`id`
+                    LEFT JOIN `image` `m` 
+                    ON `m`.`itemId` = `i`.`id`
+                    AND `m`.`modelName` = 'Slider' 
+                    AND `m`.`isMain` = '1'
+                    ORDER BY `i`.`id` desc in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Schema.php:678
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(1304): yii\db\Schema->convertException(Object(PDOException), 'SELECT `i`.*,`m...')
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(1165): yii\db\Command->internalExecute('SELECT `i`.*,`m...')
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\db\Command.php(407): yii\db\Command->queryInternal('fetchAll', 2)
+#3 C:\xampp\htdocs\webertela-new\api\actions\SliderAction.php(25): yii\db\Command->queryAll(2)
+#4 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\SliderController.php(17): api\actions\SliderAction::getList()
+#5 [internal function]: rest\modules\v1\controllers\SliderController->actionList()
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#9 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/slider/list', Array)
+#10 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#11 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#12 {main}
+Additional Information:
+Array
+(
+    [0] => 42S02
+    [1] => 1146
+    [2] => Table 'august.slider' doesn't exist
+)
+
+2021-08-22 18:48:37 [::1][2][-][info][application] $_GET = [
+    'r' => 'v1/slider/list'
+]
+
+$_POST = []
+2021-08-26 08:24:20 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-26 08:24:19 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-26 08:25:39 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-26 08:25:39 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-26 08:25:51 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-26 08:25:51 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 12:28:59 [::1][-][-][error][yii\base\ErrorException:2] yii\base\ErrorException: preg_match(): Allocation of JIT memory failed, PCRE JIT will be disabled. This is likely caused by security restrictions. Either grant PHP permission to allocate executable memory, or set pcre.jit=0 in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php:666
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'preg_match(): A...', 'C:\\xampp\\htdocs...', 666, Array)
+#1 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(666): preg_match('%^[a-z][a-z0-9\\...', 'news')
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(635): yii\base\Module->isIncorrectClassNameOrPrefix('news', '')
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(602): yii\base\Module->createControllerByID('news')
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(594): yii\base\Module->createController('list')
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(528): yii\base\Module->createController('news/list')
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/news/list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#9 {main}
+2021-08-31 12:28:58 [::1][-][-][info][application] $_GET = [
+    'r' => 'v1/news/list'
+]
+
+$_POST = []
+2021-08-31 12:35:13 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-31 12:35:13 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:30:14 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-31 14:30:14 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:30:45 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-31 14:30:44 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:32:41 [::1][1][-][error][Error] Error: Class 'app\models\Orders' not found in C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php:16
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#1 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2021-08-31 14:32:41 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:33:39 [::1][1][-][error][Error] Error: Class 'app\models\Orders' not found in C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php:16
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#1 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2021-08-31 14:33:38 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:34:47 [::1][1][-][error][Error] Error: Class 'app\models\Orders' not found in C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php:17
+Stack trace:
+#0 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#1 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#2 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2021-08-31 14:34:47 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []
+2021-08-31 14:36:29 [::1][1][-][error][yii\base\UnknownClassException] yii\base\UnknownClassException: Unable to find 'backend\models\Orders' in file: C:\xampp\htdocs\webertela-new/backend/models/Orders.php. Namespace missing? in C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\BaseYii.php:296
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\models\\...')
+#1 C:\xampp\htdocs\webertela-new\api\actions\OrdersAction.php(15): spl_autoload_call('backend\\models\\...')
+#2 C:\xampp\htdocs\webertela-new\rest\modules\v1\controllers\OrdersController.php(14): api\actions\OrdersAction::getList()
+#3 [internal function]: rest\modules\v1\controllers\OrdersController->actionList()
+#4 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Controller.php(181): yii\base\InlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Module.php(534): yii\base\Controller->runAction('list', Array)
+#7 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\web\Application.php(104): yii\base\Module->runAction('v1/orders/list', Array)
+#8 C:\xampp\htdocs\webertela-new\vendor\yiisoft\yii2\base\Application.php(392): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 C:\xampp\htdocs\webertela-new\rest\web\index.php(18): yii\base\Application->run()
+#10 {main}
+2021-08-31 14:36:29 [::1][1][-][info][application] $_GET = [
+    'r' => 'v1/orders/list'
+]
+
+$_POST = []

@@ -5,6 +5,7 @@ use api\actions\UserAction;
 use api\actions\UserPasswordResetAction;
 use api\models\database\Poses;
 use api\models\database\Safe;
+use backend\models\User;
 use rest\models\response\Response;
 use rest\models\response\TokenInfo;
 use yii\filters\auth\CompositeAuth;
@@ -14,7 +15,7 @@ use yii\filters\auth\QueryParamAuth;
 use yii\filters\Cors;
 use yii\filters\VerbFilter;
 use yii\web\HttpException;
-use yii\web\User;
+
 
 class AuthController extends LangController {
 
@@ -109,6 +110,22 @@ class AuthController extends LangController {
         $response->data = $token_info;
         return $response;
     }
+
+    public function actionSignUp() {
+
+
+
+            $user = new User();
+            $user->username = $this->username;
+            $user->email = $this->email;
+            $user->setPassword($this->password);
+            $user->generateAuthKey();
+            $user->generateEmailVerificationToken();
+        return $user->save() ;
+        return $user->save() ;
+        return $user->save() ;
+
+        }
 
 
     public function actionClocked() {

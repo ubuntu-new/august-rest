@@ -16,10 +16,9 @@ class ProductsController extends RestController  {
         //$rcxa = \Yii::$app->request->post('name');
         return ProductAction::getList();
     }
-
-    public  function actionFeautured(){
+    public  function actionCatlist(){
         //$rcxa = \Yii::$app->request->post('name');
-        return ProductAction::getFeautured();
+        return ProductAction::getCatlist();
     }
 
 

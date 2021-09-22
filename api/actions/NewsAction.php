@@ -8,7 +8,7 @@ use yii\base\Exception;
 use yii\helpers\Json;
 
 class NewsAction {
-    public static function getList(){
+    public static function getList() {
        //return Products::find()->all();
         //$sql = "select * from products";
         $sql = "SELECT {{i}}.*,{{m}}.[[filePath]] FROM {{news}} {{i}} 

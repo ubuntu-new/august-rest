@@ -17,6 +17,10 @@ nbproject
 # windows thumbnail cache
 Thumbs.db
 
+# history
+.history/
+
+
 # composer vendor dir
 /vendor
 
